@@ -1,0 +1,15 @@
+<div class="upload-container" appUploadImage (onFileDrop)="dropFiles($event)">
+    <input type="file" #fileDropRef id="fileDropRef" accept="image/*" multiple (change)="dropFiles($event)" />
+    <p class="upload-header">
+        Upload your image
+    </p>
+    <p class="upload-info">
+        File should be Jpeg, Png,...
+    </p>
+    <div class="upload-image">
+        <img src="../../assets/image.svg" alt="upload-image">
+        <p>Drag & Drop your image here</p>
+    </div>
+    <p class="or-text">Or</p>
+    <label for="fileDropRef" class="choose-button"><span class="button-text">Choose a file</span></label>
+</div>

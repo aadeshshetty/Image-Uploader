@@ -1,0 +1,24 @@
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 24px;
+    text-align: center;
+    left: 0px;
+    color: #A9A9A9;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer>span {
+    color: #A9A9A9;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
