@@ -1,15 +1,19 @@
-<div class="upload-container" appUploadImage (onFileDrop)="dropFiles($event)">
+<div class="upload-container" appUploadImage (onFileDrop)="dropFiles($event)" *ngIf="progress<=0">
     <input type="file" #fileDropRef id="fileDropRef" accept="image/*" multiple (change)="dropFiles($event)" />
-    <p class="upload-header">
+    <span class="upload-header">
         Upload your image
-    </p>
-    <p class="upload-info">
+    </span>
+    <span class="upload-info">
         File should be Jpeg, Png,...
-    </p>
+    </span>
     <div class="upload-image">
         <img src="../../assets/image.svg" alt="upload-image">
-        <p>Drag & Drop your image here</p>
+        <span>Drag & Drop your image here</span>
     </div>
-    <p class="or-text">Or</p>
+    <span class="or-text">Or</span>
     <label for="fileDropRef" class="choose-button"><span class="button-text">Choose a file</span></label>
+</div>
+<div class="progressbar" *ngIf="progress>0">
+    <h1 class="progress-text">uploading</h1>
+    <mat-progress-bar class="progress-bar" mode="determinate" [value]="progress"></mat-progress-bar>
 </div>

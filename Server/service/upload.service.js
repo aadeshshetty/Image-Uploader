@@ -1,5 +1,6 @@
 const multer = require("multer");
 const cloudinary = require("cloudinary");
+const { ErrorHandler } = require("../utils/errorHandler");
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,

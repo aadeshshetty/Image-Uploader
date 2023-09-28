@@ -20,6 +20,7 @@ const uploadImage = async (req, res, next) => {
       data: imageDetailsList,
     });
   } catch (error) {
+    console.log(error);
     next(new ErrorHandler(error.statusCode || 500, error.message));
   }
 };
