@@ -31,14 +31,17 @@ yarn-error.log
 .history/*
 
 # Miscellaneous
-/.angular/cache
-.sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
+Client/.angular/cache/
+Client/.sass-cache/
+Client/connect.lock
+Client/coverage
+Client/libpeerconnection.log
+Client/testem.log
+Client/typings
 
 # System files
 .DS_Store
 Thumbs.db
+Client/node_modules
+Server/node_modules
+.gitignore
