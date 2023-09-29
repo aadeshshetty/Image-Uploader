@@ -44,4 +44,5 @@ Client/typings
 Thumbs.db
 Client/node_modules
 Server/node_modules
+Server/.env
 .gitignore

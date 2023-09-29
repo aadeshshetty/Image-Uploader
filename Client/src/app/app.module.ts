@@ -10,8 +10,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ImageComponent } from './image/image.component';
-import {ClipboardModule} from '@angular/cdk/clipboard'
-import {MatIconModule} from '@angular/material/icon'
+import {ClipboardModule} from '@angular/cdk/clipboard';
+import {MatIconModule} from '@angular/material/icon';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {MatIconModule} from '@angular/material/icon'
     MatProgressBarModule,
     BrowserAnimationsModule,
     ClipboardModule,
-    MatIconModule
+    MatIconModule,
+    IvyCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

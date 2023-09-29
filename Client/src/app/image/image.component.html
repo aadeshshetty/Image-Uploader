@@ -1,9 +1,10 @@
 <div class="image-container">
     <span class="text">Uploaded Successfully</span>
-    <img class="img" [src]="image[0].secure_url" alt="image"/>
+    <carousel #carouselRef class="img" [borderRadius]="12" [cellsToShow]="1" cellWidth="100%" [images]="image" [counter]="true" (click)="onSlideChange($event)"></carousel>
     <div class="url-section">
-        <div class="link-box">{{image[0].secure_url}}</div>
-        <div [cdkCopyToClipboard]="image[0].secure_url" class="copy">Copy Link</div>
+        <div class="link-box">{{image[carouselRef.carousel.slide.counter].path}}</div>
+        <div [cdkCopyToClipboard]="image[carouselRef.carousel.slide.counter].path" class="copy">Copy Link</div>
     </div>
-    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home" class="home-icon" routerLink=""></mat-icon>
+    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home" class="home-icon"
+        routerLink=""></mat-icon>
 </div>

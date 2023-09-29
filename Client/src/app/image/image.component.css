@@ -23,9 +23,10 @@
     margin-bottom: 25.34px;
 }
 
-.image-container>.img {
-    width: 338px;
-    height: 224.397px;
+.img {
+    width: 338px !important;
+    height: 224.397px !important;
+    object-fit: fill !important;
     flex-shrink: 0;
     border-radius: 12px;
     background-repeat: no-repeat;
@@ -51,7 +52,7 @@
     color: #4F4F4F;
     text-align: center;
     font-family: Poppins;
-    font-size: 8px;
+    font-size: 10px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -61,7 +62,6 @@
     margin-right: 14.86px;
     text-overflow: ellipsis;
     overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .copy {
